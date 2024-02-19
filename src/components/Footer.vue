@@ -3,7 +3,7 @@
     <div class="copyright">
       <span class="site-name">{{ siteName }}</span>
       <span class="year">{{ fullYear }}</span>
-      <span class="anthor" @click="jumpTo(copyrightLink ?? 'https://github.com/imsyy/Snavigation')">
+      <span class="anthor" @click="jumpTo(copyrightLink ?? 'https://ovomoe.com')">
         {{ siteAnthor }}
       </span>
       <span v-if="icp" class="icp" @click="jumpTo('https://beian.miit.gov.cn')">
@@ -20,8 +20,9 @@
     >
       <div class="about-modal">
         <div class="about">
-          <span class="name">{{ siteName }}</span>
+          <span class="name">Snavigation</span>
           <span class="version">v {{ packageJson.version }}</span>
+          <span class="version">来自开源项目Snavigation，作者imsyy,感谢！</span>
         </div>
         <div class="desc">
           <n-space class="link" justify="center">
